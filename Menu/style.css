@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+/* Estilos para el menú desplegable en pantallas pequeñas */
+nav .mobile {
+  display: none; /* Ocultar el menú desplegable por defecto */
+}
+
+/* Estilos para el logotipo en la barra de navegación */
+nav .logo {
+  min-width: 250px;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+}
+
+/* Estilos para los enlaces en la barra de navegación al pasar el cursor por encima */
+nav a:hover {
+  color: black;
+  background-color: rgb(0, 195, 255);
+}
+
+/* Estilos para el menú principal en la barra de navegación */
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Estilos para los elementos dentro del menú principal */
+nav .desktop .primary,
+nav .desktop .secondary {
+  display: flex;
+}
+
+/* Estilos para el selector de navegación de pantalla completa */
+nav .secondary.full {
+  /* Estilos para el selector */
+}
+
+/* Estilos para el selector de navegación en versión mini para pantallas pequeñas */
+nav .secondary.mini {
+  display: none; /* Ocultar el selector de navegación mini por defecto */
+}
+
+/* Estilos para el menú desplegable en la versión mini de la barra de navegación */
+@media screen and (max-width: 894px) {
+  nav .logo {
+    min-width: 100px;
+  }
+
+  nav .secondary.full {
+    display: none; /* Ocultar el selector de navegación en pantallas pequeñas */
+  }
+
+  nav .secondary.mini {
+    display: block; /* Mostrar el selector de navegación mini en pantallas pequeñas */
+  }
+
+  nav .secondary.mini .submenu {
+    position: absolute;
+    display: none;
+  }
+}
+
+/* Estilos para la versión móvil de la barra de navegación */
+@media screen and (max-width: 516px) {
+  nav .desktop {
+    display: none; /* Ocultar el menú principal en la versión móvil */
+  }
+
+  nav .mobile {
+    display: block; /* Mostrar el menú desplegable en la versión móvil */
+  }
+
+  nav .mobile .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .mobile .header .logo {
+    flex: 1;
+    text-align: center;
+  }
+
+  nav .mobile .header .more button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+  }
+
+  nav .mobile .header .more button:hover {
+    background-color: white;
+    color: black;
+  }
+}
