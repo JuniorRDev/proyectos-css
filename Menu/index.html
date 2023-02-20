@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu Responsive</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Configuración para compatibilidad con Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configuración para la visualización de la página en dispositivos móviles -->
+    <title>Menu Responsive</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Enlace al archivo CSS para estilos de la página -->
+  </head>
+  <body>
+     <nav>
+      <!-- Elemento de navegación -->
+      <div class="mobile">
+        <!-- Contenedor de los elementos para dispositivos móviles -->
+        <div class="header">
+          <!-- Encabezado del contenedor -->
+          <div class="logo">Logo</div>
+          <!-- Elemento para mostrar el logo -->
+          <div class="more"><button>More</button></div>
+          <!-- Botón de "Más opciones" -->
+        </div>
+        <div class="links">
+          <!-- Contenedor de enlaces para dispositivos móviles -->
+          <a href="#">Services</a>
+          <!-- Enlace a la sección de servicios -->
+          <a href="#">About</a>
+          <!-- Enlace a la sección de acerca de -->
+          <a href="#">Contact</a>
+          <!-- Enlace a la sección de contacto -->
+          <a href="#">Search</a>
+          <!-- Enlace a la sección de búsqueda -->
+          <a href="#">Sign up</a>
+          <!-- Enlace para registrarse -->
+          <a href="#">Login</a>
+          <!-- Enlace para iniciar sesión -->
+        </div>
+      </div>
+      <div class="desktop">
+        <!-- Contenedor para dispositivos de escritorio -->
+        <div class="logo">Logo</div>
+        <!-- Elemento para mostrar el logo -->
+        <div class="primary">
+          <!-- Contenedor de los enlaces principales -->
+          <a href="#">Services</a>
+          <!-- Enlace a la sección de servicios -->
+          <a href="#">About</a>
+          <!-- Enlace a la sección de acerca de -->
+          <a href="#">Contact</a>
+          <!-- Enlace a la sección de contacto -->
+        </div>
+        <div class="secondary full">
+          <!-- Contenedor de los enlaces secundarios a pantalla completa -->
+          <a href="#">Search</a>
+          <!-- Enlace a la sección de búsqueda -->
+          <a href="#">Sign up</a>
+          <!-- Enlace para registrarse -->
+          <a href="#">Login</a>
+          <!-- Enlace para iniciar sesión -->
+        </div>
+        <div class="secondary mini">
+          <!-- Contenedor de los enlaces secundarios para dispositivos móviles -->
+          <a href="#">More</a>
+          <!-- Enlace de "Más opciones" -->
+          <div class="submenu">
+            <!-- Submenú de opciones -->
+            <a href="#">Sign up</a>
+            <!-- Enlace para registrarse -->
+            <a href="#">Login</a>
+         </div>  
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
