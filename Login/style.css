@@ -1,21 +1,25 @@
+/* Estilos generales de la página */
 body {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  
+    
+    /* Centrado vertical y horizontal de los elementos */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+    
+    background-color: blueviolet; /* Color de fondo de la página */
+    
+    height: 100vh; /* Altura de la página */
+    }
   
-    height: 100vh;
-  }
-  
-  .material-icons {
+/* Estilos para la fuente de los iconos de Material Design */
+    .material-icons {
     font-family: "Material Icons";
     font-weight: normal;
     font-style: normal;
-    font-size: 48px; /* Preferred icon size */
+    font-size: 48px; /* Tamaño preferido de los iconos */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -24,62 +28,72 @@ body {
     white-space: nowrap;
     direction: ltr;
   
-    /* Support for all WebKit browsers. */
+    /* Soporte para todos los navegadores WebKit */
     -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
+    /* Soporte para Safari y Chrome */
     text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
+
+    /* Soporte para Firefox */
     -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
+
+    /* Soporte para IE */
     font-feature-settings: "liga";
-  }
+    }
   
-  .form-container {
-    background-color: white;
-    width: 80%;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 90vh;
-  
+    /* Estilos para el contenedor del formulario */
+    .form-container {
+    background-color: white; /* Fondo del contenedor */
+    width: 80%; /* Ancho del contenedor */
+    border-radius: 5px; /* Radio de los bordes del contenedor */
+    overflow: hidden; /* Evita que los contenidos desborden el contenedor */
+    height: 90vh; /* Altura del contenedor */
+
+    /* Centrado vertical de los elementos */
     display: flex;
     align-items: center;
-  }
+    }
   
-  .form-container .login-container {
-    width: 500px;
-    margin: 0 auto;
-  }
-  .form-container .login-container > h2 {
-    text-align: center;
-    font-size: 2.5rem;
-  }
+    /* Estilos para el contenedor de inicio de sesión */
+    .form-container .login-container {
+    width: 500px; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrado horizontal del contenedor */
+    }
+
+    /* Estilos para el título del contenedor de inicio de sesión */
+    .form-container .login-container > h2 {
+    text-align: center; /* Alineación del texto */
+    font-size: 2.5rem; /* Tamaño de la fuente */
+    }
   
-  .form-container .login-container > p,
-  .form-container .login-container span {
-    color: #555;
-    text-align: center;
-  }
+    /* Estilos para los textos del contenedor de inicio de sesión */
+    .form-container .login-container > p,
+    .form-container .login-container span {
+    color: #555; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    }
   
-  .form-container .login-container label {
-    display: block;
-    font-weight: bold;
-    padding: 5px 0;
-  }
+    /* Estilos para las etiquetas del formulario */
+    .form-container .login-container label {
+        display: block;
+        font-weight: bold;
+        padding: 5px 0;
+        }
   
-  .form-container .login-container input.input {
+    /* Estilos para los campos de entrada del formulario */
+    .form-container .login-container input.input {
     display: block;
     box-sizing: border-box;
     padding: 10px;
-    border: solid 1px #ccc;
-    width: 100%;
-    border-radius: 5px;
-  }
+    border: solid 1px #ccc; /* Borde del campo de entrada */
+    width: 100%; /* Ancho del campo de entrada */
+    border-radius: 5px; /* Radio de los bordes del campo de entrada */
+    }
   
-  .form-container .login-container input.input:focus {
-    outline: solid 1px rgb(0, 153, 255);
-  }
+    /* Estilos para los campos de entrada del formulario cuando están enfocados */
+    .form-container .login-container input.input:focus {
+        outline: solid 1px rgb(0, 153, 255);
+        }
+
   .form-container .login-container .providers {
     display: flex;
     flex-direction: column;
